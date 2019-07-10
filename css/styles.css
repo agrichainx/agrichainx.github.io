@@ -15,9 +15,9 @@ body {
   width: 95%;
   margin: auto;
   background-color: #EEE;
-font-size:20px;
+font-size:16px;
 color: #666;
-text-align: justify;
+text-align: left;
 
 }
 
@@ -274,7 +274,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  padding: 12.5px 46px;
+  padding: 12.5px 20px;
 }
 nav ul .li:hover {
   background: #2e6228;
