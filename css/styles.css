@@ -12,12 +12,12 @@ body {
   scrollbar-darkshadow-color: #5997CA;
   scrollbar-track-color: #F6F6F6;
   scrollbar-arrow-color: #F6F6F6;
-  width: 95%;
+  width: 97%;
   margin: auto;
   background-color: #EEE;
-font-size:16px;
+font-size:15px;
 color: #666;
-text-align: left;
+text-align:;
 
 }
 
@@ -36,9 +36,15 @@ text-align: left;
     scrollbar-darkshadow-color: #5997CA;
     scrollbar-track-color: #F6F6F6;
     scrollbar-arrow-color: #F6F6F6;
-    width: 95%;
+    width: 99%;
     margin: auto;
     background-color: #EEE;
+  font-size:16px;
+  color: #666;
+  text-align: justify;
+
+  }
+
 
   }
 
