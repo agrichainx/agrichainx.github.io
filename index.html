@@ -1,596 +1,90 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 <html>
 
 <!-- Tue, 02 Jul 2019 17:41:00 GMT -->
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101190623-2"></script>
 
-                <meta charset="utf-8">
-        <title>Agrichainx</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
 
-            <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-            <link rel="stylesheet" href="css/styles.css">
-            <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
-            <link href="vendor/fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
-            <script src="js/jquery-1.12.4.min.js"></script>
-            <script src="js/jquery-ui-1.12.1.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-            <script src="js/bbq.min.js"></script>
-            <script src="js/jquery.maskedinput.min.js"></script>
-            <script src="js/plugins/piexif.min.js" type="text/javascript"></script>
-            <script src="js/plugins/sortable.min.js" type="text/javascript"></script>
-            <script src="js/plugins/purify.min.js" type="text/javascript"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="vendor/fileinput/js/fileinput.js"></script>
-            <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
-            <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
-                <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    </head>
-    <body class="main-page ">
-<br>
-<div class="header container-1" style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name='image' content='https://agric.com/images/favicon.ico' />
+  <meta name='title' content='Agrichainx - progress' />
+  <meta name='description' content='progress' />
+
+  <title>Agrichainx progress</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mediastyles.css">
+
+  <script src="js/demo.js"></script>
+  <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+
+ </head>
+
+  <body>
+
+
+
+
+<header class="header" style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
     min-height: 0px;
     box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
-    padding: 3px "   style="  ;" >
-    <a href="index.html">
-        <img  src="images/logo.png" class="logo">
-    </a>
-            <div class="authorization col-md-5" style="margin-top: 42px;">
-            <div style="display: block;width: 100%;height: 45px;">
-                <button type="submit" class="btn btn-labeled btn-success"  data-toggle="modal" data-target="#loginModal" style="float: right;margin-right: 5px"><img src="images/checked.png" alt="" style="margin-left: -3px;">
-                    Log in
-                </button>
-                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-labeled btn-success" style="float: right;margin-right: 5px; width: auto;">
-                    Sign up
-                </button>
-            </div>
-            <div style="display: block;float: right; width: 100%">
-                <a href="#" class="authorization-text " data-toggle="modal" data-target="#myModal2" style="margin-right: 5px;"><p class="indent" style="font-size: 14px; color: #696969;margin-top: 0px;">Forgot password? </p></a>
-            </div>
-        </div>
-
-        <div class="language">
-                  <br>                                      </div>
-</div>
+    padding: 3px " >
 
 
+        <a href="index.html">
+            <img  src="images/logo.png" class="logo">
+        </a>
+                <div class="authorization" >
+                <div>
+                  <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-labeled btn-success" style="float: right;margin-right: 5px; width: auto;">
+                      Sign up
+                  </button>
+                    <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-labeled btn-success" style="float: right;margin-right: 5px; width: auto;">
+                      Log In
+                    </button>
+                </div>
 
-
-<nav   style=" border-top: 1px solid #f5f3f5; border-bottom: 1px solid #f5f3f5
-" >
-                <div class="no-active" style="background-color: #2e6228;" onclick="window.location.href='marketplace.html'">
-                <p class="font-style " >
-                                            To the trading platform
-                                    </p>
-            </div>
-
-    <ul class="ul_nav_class" style="display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;">
-                    <li class="font-style menu li" style="font-weight: 600;" onclick="window.open('https://agrolot.io/');">Our ICO</li>
-                <li class="font-style menu li" onclick="window.location.href='traders.html'" style="font-weight: 600;">Traders&#039; prices</li>
-        <li class="font-style menu li" onclick="window.location.href='companies'" style="font-weight: 600;">Companies</li>
-        <li class="font-style menu add" id="new_button"  data-link="/lot/add" >+ Add a lot</li>
-    </ul>
-</nav>
-<script>
-    $('#new_button').click(function (e) {
-                    $('#loginModal').modal();
-            e.preventDefault();
-            })
-</script>
-
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Log in to Agrichainx</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                <div class="chekin" style="margin: 0 auto">
-                    <div class="chekin-content" style="margin: 0 auto">
-                        <div class="registration-errors alert-danger"></div>
-                        <form method="post" action="http://agrolot.com/login" style="width: auto; min-width: inherit; max-width: inherit;">
-                            <div class="email">
-                                <input type="email" name="_username" class="form-control nl " placeholder="Email" required autocomplete="off">
-                            </div>
-                            <div class="password">
-                                <input type="password" name="_password" class="form-control nl " placeholder="Password" style="margin-bottom: 0" required autocomplete="off">
-                            </div>
-                            <button type="submit" class="btn btn-labeled btn-success" style="padding-left: 14px;">
-                                Log in</button>
-                        </form>
-                    </div>
-
+                <div style="display: block;float: right; width: 100%">
+                    <a href="#" class="authorization-text " data-toggle="modal" data-target="#myModal2" style="margin-right: 5px;"><p class="indent" style="color: #696969;margin-top: 0px;">Forgot password? </p></a>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Sign up to Agrichainx</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                <div class="chekin" style="margin: 0 auto">
-                    <div class="chekin-content" style="margin: 0 auto">
-                        <div class="registration-errors alert-danger"></div>
-                        <form  method="post" id="userRegisterForm" style="width: auto; min-width: inherit; max-width: inherit;">
-                            <div class="email">
-                                <input type="email" name="userRegisterForm[email]" class="form-control nl " placeholder="Email" required autocomplete="off">
-                            </div>
-                            <div class="password">
-                                <input type="password" name="userRegisterForm[plainPassword][first]" class="form-control nl " placeholder="Password" style="margin-bottom: 0" required autocomplete="off">
-                            </div>
-                            <div class="password">
-                                <input type="password" name="userRegisterForm[plainPassword][second]" class="form-control nl " placeholder="Confirm password" required autocomplete="off">
-                            </div>
-                            <input type="text" name="userRegisterForm[name]" class="form-control nl " placeholder="First name" required autocomplete="off">
-                            <input type="text" name="userRegisterForm[surname]" class="form-control nl " placeholder="Last name" autocomplete="off">
+</header>
 
+            <div class="header" style="background-color: white; display:block; padding:0px">
 
-
-
-
-
-                                <link href="css/select2.min.css" rel="stylesheet" />
-    <div id="regionSelectDiv">
-        <select name="userRegisterForm[region]"  id="regionSelect">
-            <div class="scroll-pane">
-            <option disabled selected value="0">Region</option>
-                             <option data-short="AF" value="28" >Afghanistan</option>
-                             <option data-short="AL" value="29" >Albania</option>
-                             <option data-short="DZ" value="30" >Algeria</option>
-                             <option data-short="DS" value="31" >American Samoa</option>
-                             <option data-short="AD" value="32" >Andorra</option>
-                             <option data-short="AO" value="33" >Angola</option>
-                             <option data-short="AI" value="34" >Anguilla</option>
-                             <option data-short="AQ" value="35" >Antarctica</option>
-                             <option data-short="AG" value="36" >Antigua and Barbuda</option>
-                             <option data-short="AR" value="37" >Argentina</option>
-                             <option data-short="AM" value="38" >Armenia</option>
-                             <option data-short="AW" value="39" >Aruba</option>
-                             <option data-short="AU" value="40" >Australia</option>
-                             <option data-short="AT" value="41" >Austria</option>
-                             <option data-short="AZ" value="42" >Azerbaijan</option>
-                             <option data-short="BS" value="43" >Bahamas</option>
-                             <option data-short="BH" value="44" >Bahrain</option>
-                             <option data-short="BD" value="45" >Bangladesh</option>
-                             <option data-short="BB" value="46" >Barbados</option>
-                             <option data-short="BY" value="47" >Belarus</option>
-                             <option data-short="BE" value="48" >Belgium</option>
-                             <option data-short="BZ" value="49" >Belize</option>
-                             <option data-short="BJ" value="50" >Benin</option>
-                             <option data-short="BM" value="51" >Bermuda</option>
-                             <option data-short="BT" value="52" >Bhutan</option>
-                             <option data-short="BO" value="53" >Bolivia</option>
-                             <option data-short="BA" value="54" >Bosnia and Herzegovina</option>
-                             <option data-short="BW" value="55" >Botswana</option>
-                             <option data-short="BV" value="56" >Bouvet Island</option>
-                             <option data-short="BR" value="57" >Brazil</option>
-                             <option data-short="IO" value="58" >British Indian Ocean Territory</option>
-                             <option data-short="BN" value="59" >Brunei Darussalam</option>
-                             <option data-short="BG" value="60" >Bulgaria</option>
-                             <option data-short="BF" value="61" >Burkina Faso</option>
-                             <option data-short="BI" value="62" >Burundi</option>
-                             <option data-short="KH" value="63" >Cambodia</option>
-                             <option data-short="CM" value="64" >Cameroon</option>
-                             <option data-short="CA" value="65" >Canada</option>
-                             <option data-short="CV" value="66" >Cape Verde</option>
-                             <option data-short="KY" value="67" >Cayman Islands</option>
-                             <option data-short="CF" value="68" >Central African Republic</option>
-                             <option data-short="TD" value="69" >Chad</option>
-                             <option data-short="CL" value="70" >Chile</option>
-                             <option data-short="CN" value="71" >China</option>
-                             <option data-short="CX" value="72" >Christmas Island</option>
-                             <option data-short="CC" value="73" >Cocos (Keeling) Islands</option>
-                             <option data-short="CO" value="74" >Colombia</option>
-                             <option data-short="KM" value="75" >Comoros</option>
-                             <option data-short="CG" value="76" >Congo</option>
-                             <option data-short="CK" value="77" >Cook Islands</option>
-                             <option data-short="CR" value="78" >Costa Rica</option>
-                             <option data-short="HR" value="79" >Croatia (Hrvatska)</option>
-                             <option data-short="CU" value="80" >Cuba</option>
-                             <option data-short="CY" value="81" >Cyprus</option>
-                             <option data-short="CZ" value="82" >Czech Republic</option>
-                             <option data-short="DK" value="83" >Denmark</option>
-                             <option data-short="DJ" value="84" >Djibouti</option>
-                             <option data-short="DM" value="85" >Dominica</option>
-                             <option data-short="DO" value="86" >Dominican Republic</option>
-                             <option data-short="TP" value="87" >East Timor</option>
-                             <option data-short="EC" value="88" >Ecuador</option>
-                             <option data-short="EG" value="89" >Egypt</option>
-                             <option data-short="SV" value="90" >El Salvador</option>
-                             <option data-short="GQ" value="91" >Equatorial Guinea</option>
-                             <option data-short="ER" value="92" >Eritrea</option>
-                             <option data-short="EE" value="93" >Estonia</option>
-                             <option data-short="ET" value="94" >Ethiopia</option>
-                             <option data-short="FK" value="95" >Falkland Islands (Malvinas)</option>
-                             <option data-short="FO" value="96" >Faroe Islands</option>
-                             <option data-short="FJ" value="97" >Fiji</option>
-                             <option data-short="FI" value="98" >Finland</option>
-                             <option data-short="FR" value="99" >France</option>
-                             <option data-short="FX" value="100" >France, Metropolitan</option>
-                             <option data-short="GF" value="101" >French Guiana</option>
-                             <option data-short="PF" value="102" >French Polynesia</option>
-                             <option data-short="TF" value="103" >French Southern Territories</option>
-                             <option data-short="GA" value="104" >Gabon</option>
-                             <option data-short="GM" value="105" >Gambia</option>
-                             <option data-short="GE" value="106" >Georgia</option>
-                             <option data-short="DE" value="107" >Germany</option>
-                             <option data-short="GH" value="108" >Ghana</option>
-                             <option data-short="GI" value="109" >Gibraltar</option>
-                             <option data-short="GR" value="111" >Greece</option>
-                             <option data-short="GL" value="112" >Greenland</option>
-                             <option data-short="GD" value="113" >Grenada</option>
-                             <option data-short="GP" value="114" >Guadeloupe</option>
-                             <option data-short="GU" value="115" >Guam</option>
-                             <option data-short="GT" value="116" >Guatemala</option>
-                             <option data-short="GK" value="110" >Guernsey</option>
-                             <option data-short="GN" value="117" >Guinea</option>
-                             <option data-short="GW" value="118" >Guinea-Bissau</option>
-                             <option data-short="GY" value="119" >Guyana</option>
-                             <option data-short="HT" value="120" >Haiti</option>
-                             <option data-short="HM" value="121" >Heard and Mc Donald Islands</option>
-                             <option data-short="HN" value="122" >Honduras</option>
-                             <option data-short="HK" value="123" >Hong Kong</option>
-                             <option data-short="HU" value="124" >Hungary</option>
-                             <option data-short="IS" value="125" >Iceland</option>
-                             <option data-short="IN" value="126" >India</option>
-                             <option data-short="ID" value="128" >Indonesia</option>
-                             <option data-short="IR" value="129" >Iran (Islamic Republic of)</option>
-                             <option data-short="IQ" value="130" >Iraq</option>
-                             <option data-short="IE" value="131" >Ireland</option>
-                             <option data-short="IM" value="127" >Isle of Man</option>
-                             <option data-short="IL" value="132" >Israel</option>
-                             <option data-short="IT" value="133" >Italy</option>
-                             <option data-short="CI" value="134" >Ivory Coast</option>
-                             <option data-short="JM" value="136" >Jamaica</option>
-                             <option data-short="JP" value="137" >Japan</option>
-                             <option data-short="JE" value="135" >Jersey</option>
-                             <option data-short="JO" value="138" >Jordan</option>
-                             <option data-short="KZ" value="139" >Kazakhstan</option>
-                             <option data-short="KE" value="140" >Kenya</option>
-                             <option data-short="KI" value="141" >Kiribati</option>
-                             <option data-short="KP" value="142" >Korea, Democratic People&#039;s Republic of</option>
-                             <option data-short="KR" value="143" >Korea, Republic of</option>
-                             <option data-short="XK" value="144" >Kosovo</option>
-                             <option data-short="KW" value="145" >Kuwait</option>
-                             <option data-short="KG" value="146" >Kyrgyzstan</option>
-                             <option data-short="LA" value="147" >Lao People&#039;s Democratic Republic</option>
-                             <option data-short="LV" value="148" >Latvia</option>
-                             <option data-short="LB" value="149" >Lebanon</option>
-                             <option data-short="LS" value="150" >Lesotho</option>
-                             <option data-short="LR" value="151" >Liberia</option>
-                             <option data-short="LY" value="152" >Libyan Arab Jamahiriya</option>
-                             <option data-short="LI" value="153" >Liechtenstein</option>
-                             <option data-short="LT" value="154" >Lithuania</option>
-                             <option data-short="LU" value="155" >Luxembourg</option>
-                             <option data-short="MO" value="156" >Macau</option>
-                             <option data-short="MK" value="157" >Macedonia</option>
-                             <option data-short="MG" value="158" >Madagascar</option>
-                             <option data-short="MW" value="159" >Malawi</option>
-                             <option data-short="MY" value="160" >Malaysia</option>
-                             <option data-short="MV" value="161" >Maldives</option>
-                             <option data-short="ML" value="162" >Mali</option>
-                             <option data-short="MT" value="163" >Malta</option>
-                             <option data-short="MH" value="164" >Marshall Islands</option>
-                             <option data-short="MQ" value="165" >Martinique</option>
-                             <option data-short="MR" value="166" >Mauritania</option>
-                             <option data-short="MU" value="167" >Mauritius</option>
-                             <option data-short="TY" value="168" >Mayotte</option>
-                             <option data-short="MX" value="169" >Mexico</option>
-                             <option data-short="FM" value="170" >Micronesia, Federated States of</option>
-                             <option data-short="MD" value="171" >Moldova, Republic of</option>
-                             <option data-short="MC" value="172" >Monaco</option>
-                             <option data-short="MN" value="173" >Mongolia</option>
-                             <option data-short="ME" value="174" >Montenegro</option>
-                             <option data-short="MS" value="175" >Montserrat</option>
-                             <option data-short="MA" value="176" >Morocco</option>
-                             <option data-short="MZ" value="177" >Mozambique</option>
-                             <option data-short="MM" value="178" >Myanmar</option>
-                             <option data-short="NA" value="179" >Namibia</option>
-                             <option data-short="NR" value="180" >Nauru</option>
-                             <option data-short="NP" value="181" >Nepal</option>
-                             <option data-short="NL" value="182" >Netherlands</option>
-                             <option data-short="AN" value="183" >Netherlands Antilles</option>
-                             <option data-short="NC" value="184" >New Caledonia</option>
-                             <option data-short="NZ" value="185" >New Zealand</option>
-                             <option data-short="NI" value="186" >Nicaragua</option>
-                             <option data-short="NE" value="187" >Niger</option>
-                             <option data-short="NG" value="188" >Nigeria</option>
-                             <option data-short="NU" value="189" >Niue</option>
-                             <option data-short="NF" value="190" >Norfolk Island</option>
-                             <option data-short="MP" value="191" >Northern Mariana Islands</option>
-                             <option data-short="NO" value="192" >Norway</option>
-                             <option data-short="OM" value="193" >Oman</option>
-                             <option data-short="PK" value="194" >Pakistan</option>
-                             <option data-short="PW" value="195" >Palau</option>
-                             <option data-short="PS" value="196" >Palestine</option>
-                             <option data-short="PA" value="197" >Panama</option>
-                             <option data-short="PG" value="198" >Papua New Guinea</option>
-                             <option data-short="PY" value="199" >Paraguay</option>
-                             <option data-short="PE" value="200" >Peru</option>
-                             <option data-short="PH" value="201" >Philippines</option>
-                             <option data-short="PN" value="202" >Pitcairn</option>
-                             <option data-short="PL" value="203" >Poland</option>
-                             <option data-short="PT" value="204" >Portugal</option>
-                             <option data-short="PR" value="205" >Puerto Rico</option>
-                             <option data-short="QA" value="206" >Qatar</option>
-                             <option data-short="RE" value="207" >Reunion</option>
-                             <option data-short="RO" value="208" >Romania</option>
-                             <option data-short="RU" value="209" >Russian Federation</option>
-                             <option data-short="RW" value="210" >Rwanda</option>
-                             <option data-short="KN" value="211" >Saint Kitts and Nevis</option>
-                             <option data-short="LC" value="212" >Saint Lucia</option>
-                             <option data-short="VC" value="213" >Saint Vincent and the Grenadines</option>
-                             <option data-short="WS" value="214" >Samoa</option>
-                             <option data-short="SM" value="215" >San Marino</option>
-                             <option data-short="ST" value="216" >Sao Tome and Principe</option>
-                             <option data-short="SA" value="217" >Saudi Arabia</option>
-                             <option data-short="SN" value="218" >Senegal</option>
-                             <option data-short="RS" value="219" >Serbia</option>
-                             <option data-short="SC" value="220" >Seychelles</option>
-                             <option data-short="SL" value="221" >Sierra Leone</option>
-                             <option data-short="SG" value="222" >Singapore</option>
-                             <option data-short="SK" value="223" >Slovakia</option>
-                             <option data-short="SI" value="224" >Slovenia</option>
-                             <option data-short="SB" value="225" >Solomon Islands</option>
-                             <option data-short="SO" value="226" >Somalia</option>
-                             <option data-short="ZA" value="227" >South Africa</option>
-                             <option data-short="GS" value="228" >South Georgia South Sandwich Islands</option>
-                             <option data-short="ES" value="229" >Spain</option>
-                             <option data-short="LK" value="230" >Sri Lanka</option>
-                             <option data-short="SH" value="231" >St. Helena</option>
-                             <option data-short="PM" value="232" >St. Pierre and Miquelon</option>
-                             <option data-short="SD" value="233" >Sudan</option>
-                             <option data-short="SR" value="234" >Suriname</option>
-                             <option data-short="SJ" value="235" >Svalbard and Jan Mayen Islands</option>
-                             <option data-short="SZ" value="236" >Swaziland</option>
-                             <option data-short="SE" value="237" >Sweden</option>
-                             <option data-short="CH" value="238" >Switzerland</option>
-                             <option data-short="SY" value="239" >Syrian Arab Republic</option>
-                             <option data-short="TW" value="240" >Taiwan</option>
-                             <option data-short="TJ" value="241" >Tajikistan</option>
-                             <option data-short="TZ" value="242" >Tanzania, United Republic of</option>
-                             <option data-short="TH" value="243" >Thailand</option>
-                             <option data-short="TG" value="244" >Togo</option>
-                             <option data-short="TK" value="245" >Tokelau</option>
-                             <option data-short="TO" value="246" >Tonga</option>
-                             <option data-short="TT" value="247" >Trinidad and Tobago</option>
-                             <option data-short="TN" value="248" >Tunisia</option>
-                             <option data-short="TR" value="249" >Turkey</option>
-                             <option data-short="TM" value="250" >Turkmenistan</option>
-                             <option data-short="TC" value="251" >Turks and Caicos Islands</option>
-                             <option data-short="TV" value="252" >Tuvalu</option>
-                             <option data-short="UG" value="253" >Uganda</option>
-                             <option data-short="UA" value="27" >Ukraine</option>
-                             <option data-short="AE" value="254" >United Arab Emirates</option>
-                             <option data-short="GB" value="255" >United Kingdom</option>
-                             <option data-short="US" value="256" >United States</option>
-                             <option data-short="UM" value="257" >United States minor outlying islands</option>
-                             <option data-short="UY" value="258" >Uruguay</option>
-                             <option data-short="UZ" value="259" >Uzbekistan</option>
-                             <option data-short="VU" value="260" >Vanuatu</option>
-                             <option data-short="VA" value="261" >Vatican City State</option>
-                             <option data-short="VE" value="262" >Venezuela</option>
-                             <option data-short="VN" value="263" >Vietnam</option>
-                             <option data-short="VG" value="264" >Virgin Islands (British)</option>
-                             <option data-short="VI" value="265" >Virgin Islands (U.S.)</option>
-                             <option data-short="WF" value="266" >Wallis and Futuna Islands</option>
-                             <option data-short="EH" value="267" >Western Sahara</option>
-                             <option data-short="YE" value="268" >Yemen</option>
-                             <option data-short="ZR" value="269" >Zaire</option>
-                             <option data-short="ZM" value="270" >Zambia</option>
-                             <option data-short="ZW" value="271" >Zimbabwe</option>
+                            <div class="no-active" style="background-color: #2e6228;" onclick="window.location.href='marketplace.html'">
+                            <p class="font-style " >
+                                                        To the trading platform
+                                                </p>
                         </div>
-        </select>
-    </div>
-    <script src="js/select2.full.min.js"></script>
-    <script>
-        $('#myModal').removeAttr('tabindex');
-        $("#regionSelect").select2();
-    </script>
+                    <div class="nav" style=" border-top: 1px solid #f5f3f5; border-bottom: 1px solid #f5f3f5; background-color:white; padding:0px " >
 
-                            <input class="form-control nl" style="margin-bottom: 24px !important;" type="tel" id="phone" data-locale="en">
-                            <input name="userRegisterForm[phone]" style="visibility: hidden; position: absolute" id="hiden">
-                            <input type="text" name="userRegisterForm[companyName]" class="form-control nl " placeholder="Company name" autocomplete="off">
-                            <div style="margin-left:11px;">
-                                <input id="checkboxTerms" class="radio" name="userRegisterForm[isAgree]" type="checkbox" value="1">
-                                <label for="checkboxTerms">I agree to the Agrichainx <a target="_blank" style="color: #2e6228; cursor: pointer;" href="terms.html">Terms and Conditions</a></label>
-                            </div>
-                        </form>
-                    </div>
-                    <button type="button" class="btn btn-labeled btn-success" id="registrationSubmit" style="padding-left: 14px;">
-                        Sign up</button>
-                </div>
+                <ul class="ul_nav_class" style=" background-color:white; padding:0px" >
+
+                    <li class="font-style menu li horizon" style="font-weight: 600;" onclick="window.open('https://agrolot.io/');">Our ICO</li>
+                    <li class="font-style menu li horizon" onclick="window.location.href='traders.html'" style="font-weight: 600;">Traders&#039; prices</li>
+                    <li class="font-style menu li" onclick="window.location.href='companies'" style="font-weight: 600;">Companies</li>
+                    <li class="font-style menu add" id="new_button"  data-link="/lot/add" >+ Add a lot</li>
+
+                </ul>
             </div>
-        </div>
-    </div>
-</div>
-<script src="js/intlTelInput.min.js"></script>
-<script src="js/utils.js"></script>
-<script>
-    $(document).ready(function () {
-        var phoneInput = $("#phone");
-        var locale = phoneInput.data('locale');
-
-        if (locale === 'en') {
-            phoneInput.intlTelInput({
-                initialCountry: "ch",
-                separateDialCode: true,
-                allowDropdown: false
-            });
-        } else {
-            phoneInput.intlTelInput({
-                initialCountry: "ua",
-                separateDialCode: true,
-                allowDropdown: false
-            })
-        }
-
-        phoneInput.on("focus", function (e, countryData) {
-            phoneInput.val('');
-            var phoneMaskDefault = phoneInput.attr('placeholder').replace(/[0-9]/g, 9);
-            phoneInput.mask(phoneMaskDefault);
-        });
-
-        phoneInput.on("countrychange", function (e, countryData) {
-            phoneInput.val('');
-            var phoneMaskOnChange = phoneInput.attr('placeholder').replace(/[0-9]/g, 9);
-            phoneInput.mask(phoneMaskOnChange);
-        });
-
-        $('#regionSelect').on('select2:select', function (e) {
-            var regionShort = $($('#regionSelect').select2('data')[0]['element']).data('short');
-            $("#phone").intlTelInput("setCountry", regionShort);
-        });
-
-        var params = $.deparam.fragment();
-        if (params.loginError) {
-            $('#loginModal').modal();
-            $('#loginModal').find('.registration-errors').html('You entered incorrect data.');
-            $('#loginModal').find('.registration-errors').css({'padding' : '10px', 'border-radius' : '10px'});
-        }
-        $('#registrationSubmit').click(function (event) {
-            var code = String($('.selected-dial-code')[0].textContent);
-            var phoneNumber = String($('#phone').val());
-            $('#hiden').val(code + ' ' + phoneNumber);
-            $.ajax({
-                type: "POST",
-                url: "/register_ajax",
-                data: $("#userRegisterForm").serialize(),
-                success: function(response) {
-                    if (response.success) {
-                        $('.chekin').html(response.response);
-                    }
-                    else {
-                        $('.registration-errors').html('');
-                        $.each(response.response, function (k, v) {
-                            if (v.hasOwnProperty("ERROR")) {
-                                $('.registration-errors').append(v.ERROR + '<br>')
-                            } else {
-                                if (v.hasOwnProperty("first")) {
-                                    $('.registration-errors').append(v.first.ERROR + '<br>')
-
-                                } else {
-                                    $('.registration-errors').append(v.second.ERROR + '<br>')
-                                }
-                            }
-                        })
-                        $('.registration-errors').css({'padding' : '10px', 'border-radius' : '10px'});
-                        $('#myModal').scrollTop(0);
-                    }
-                }
-            });
-        });
-        $("#myModal").on('hidden.bs.modal', function () {
-            $('#registrationSubmit').click(function (event) {
-                $.ajax({
-                    type: "POST",
-                    url: "/register_ajax",
-                    data: $("#userRegisterForm").serialize(),
-                    success: function(response) {
-                        if (response.success) {
-                            $('.chekin').html(response.response);
-                        }
-                        else {
-                            $('.registration-errors').html('');
-                            $.each(response.response, function (k, v) {
-                                if (v.hasOwnProperty("ERROR")) {
-                                    $('.registration-errors').append(v.ERROR + '<br>')
-                                } else {
-                                    if (v.hasOwnProperty("first")) {
-                                        $('.registration-errors').append(v.first.ERROR + '<br>')
-
-                                    } else {
-                                        $('.registration-errors').append(v.second.ERROR + '<br>')
-                                    }
-                                }
-                                $('.registration-errors').css({'padding' : '10px', 'border-radius' : '10px'});
-                                $('#myModal').scrollTop(0);
-                            })
-                        }
-                    }
-                });
-            });
-        });
-    });
-
-</script>
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Password recovery</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="password_recovery" style="width: auto" >
-                    <div class="password_errors alert-danger"></div>
-                    <div class="email" style="width: 75%">
-                        <form  id="passwordRecoveryForm" action="#" enctype="multipart/form-data" method="post" style="width: auto; max-width: inherit; margin: 0">
-                        <input type="email" name="email" id="email" class="form-control nl " style="background: #f9fafc;;" placeholder="Email" autocomplete="off">
-                        </form>
-                    </div>
-                    <button type="button"  class="btn btn-labeled btn-success" style="width: auto; padding-left: 40px;padding-right: 40px;" id="passwordRecoverySubmit">
-                        Send</button>
-                    </div>
-                </div>
             </div>
-        </div>
-    </div>
-    <script>
-        $(document).ready(function () {
-            $('#passwordRecoverySubmit').click(function (event) {
-                $.ajax({
-                    type: "POST",
-                    url: "/password_recovery_request_ajax",
-                    data: $("#passwordRecoveryForm").serialize(),
-                    success: function(response) {
-                        if (response.success) {
-                            $('.password_recovery').html(response.response);
-                        }
-                        else {
-                            $('.password_errors').html(response.response);
-                        }
-                    }
-                });
-            });
-        })
 
-    </script>
+            <p></p>
+
+<main  >
 
 
-
-
-
-<br>
-
-
-
-
-
-    <div class="content"  style="background-color: rgb(255, 255, 255);
-    min-height: 0px;
-    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
-    padding: 15px; " >
-        <div class="adap-no-filter">
-            <div class="wrapper-about-agrolot">
-                <div class="about-agrolot">
-                    <h3>Welcome</h3>
+    <div class="about-agrolot" style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
+        box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;">
+                    <h2>Welcome</h2>
                     <span style="" >
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                           <br><br>
@@ -598,307 +92,113 @@
                           <br><br>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                           <br><br>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <br><br>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <br><br>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <br><br>
+
                       </span>
-                </div>
-                                    <div class="about-agrolot" style="margin-top:14px">
-                        <h3>Agrichainx launch ICO</h3>
-                        <span> We want to become decentralized platform on the B2B market for trading agricultural crops, food products, and is running as a crowdfunding project built on Blockchain technology with the idea of Smart Contracts. The aim of our project is to let the small and medium businesses in any part of the world enter the global trade markets safely, and minimize the price of food products for the end user without the quality loss. More details you can read at our ICO website -  <a href="http://agrolot.io/" style="color: #2e6228;">http://agrolot.io</a></span>
-                    </div>
-                                <div class="main-content">
-                    <div class="section" style="cursor: pointer" onclick="window.location.href='marketplace.html'">
-                        <div class="img marketplace" >
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 762.3 762.3" style="enable-background:new 0 0 762.3 762.3;" xml:space="preserve">
+</div>
 
-                                <g>
-                                    <circle class="st0" cx="381.1" cy="381.1" r="381.1"/>
-                                    <path class="st1" d="M542.5,497.8l19.3,148c86-58.1,142.6-156.6,142.6-268.2c0-178.5-144.6-323.3-323.1-323.5H381
-                                        C202.5,54.3,57.9,199.1,57.9,377.6c0,111.7,56.6,210.1,142.6,268.2l19.3-148L542.5,497.8z"/>
-                                    <rect x="242.9" y="290.4" class="st1" width="276.5" height="207.4"/>
-                                    <rect x="224.3" y="179.6" class="st1" width="313.6" height="110.8"/>
-                                    <rect x="349" y="344.8" class="st2" width="64.2" height="153.1"/>
-                                    <g>
-                                        <line class="st3" x1="250.6" y1="179.6" x2="250.6" y2="290.4"/>
-                                        <line class="st3" x1="276.6" y1="179.6" x2="276.6" y2="290.4"/>
-                                        <line class="st3" x1="302.6" y1="179.6" x2="302.6" y2="290.4"/>
-                                        <line class="st3" x1="328.7" y1="179.6" x2="328.7" y2="290.4"/>
-                                        <line class="st3" x1="354.7" y1="179.6" x2="354.7" y2="290.4"/>
-                                        <line class="st3" x1="380.7" y1="179.6" x2="380.7" y2="290.4"/>
-                                        <line class="st3" x1="406.7" y1="179.6" x2="406.7" y2="290.4"/>
-                                        <line class="st3" x1="432.7" y1="179.6" x2="432.7" y2="290.4"/>
-                                        <line class="st3" x1="458.8" y1="179.6" x2="458.8" y2="290.4"/>
-                                        <line class="st3" x1="484.8" y1="179.6" x2="484.8" y2="290.4"/>
-                                        <line class="st3" x1="510.8" y1="179.6" x2="510.8" y2="290.4"/>
-                                    </g>
-                                </g>
-                        </svg>
-                        </div>
-                        <div>
-                            <h3>Trading platform</h3>
-                            <p style="font-size: 14px;">The section is intended for searching or placing for purchase/sale various products/services that are related to agrarian subjects.</p>
-                        </div>
-                    </div>
-                    <div class="section" style="cursor: pointer" onclick="window.location.href='traders.html'">
-                        <div class="img prices-traders">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 762.3 762.3" style="enable-background:new 0 0 762.3 762.3;" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:#2E6228;}
-    .st1{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    .st2{fill:none;stroke:#FFFFFF;stroke-width:15.0741;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    .st3{fill:none;stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
-    .st4{fill:#869316;}
-</style>
-                                <g>
-                                    <circle class="st0" cx="381.1" cy="381.1" r="381.1"/>
-                                    <path class="st1" d="M539.5,497.8l19.3,148c86-58.1,142.6-156.6,142.6-268.2c0-178.5-144.6-323.3-323.1-323.5H378
-		C199.5,54.3,54.9,199.1,54.9,377.6c0,111.7,56.6,210.1,142.6,268.2l19.3-148l36.7,0L539.5,497.8z"/>
-                                    <polyline class="st1" points="215,442.3 276.5,355.6 315.7,394.7 406.6,250.7 437.3,281.4 513,179.6 	"/>
-                                    <polyline class="st1" points="513,220.9 513,174.9 470.7,174.9 	"/>
-                                    <line class="st3" x1="242.7" y1="442.3" x2="242.7" y2="497.8"/>
-                                    <line class="st3" x1="265.2" y1="405.9" x2="265.2" y2="497.8"/>
-                                    <line class="st3" x1="287.8" y1="401.8" x2="287.8" y2="497.8"/>
-                                    <line class="st3" x1="310.3" y1="420.9" x2="310.3" y2="497.8"/>
-                                    <line class="st3" x1="332.8" y1="405.9" x2="332.8" y2="497.8"/>
-                                    <line class="st3" x1="355.3" y1="366.9" x2="355.3" y2="497.8"/>
-                                    <line class="st3" x1="377.8" y1="332.9" x2="377.8" y2="497.8"/>
-                                    <line class="st3" x1="400.4" y1="299.9" x2="400.4" y2="497.8"/>
-                                    <line class="st3" x1="422.9" y1="299.9" x2="422.9" y2="497.8"/>
-                                    <line class="st3" x1="445.4" y1="305.9" x2="445.4" y2="497.8"/>
-                                    <line class="st3" x1="467.9" y1="279.9" x2="467.9" y2="497.8"/>
-                                    <line class="st3" x1="490.4" y1="253.9" x2="490.4" y2="497.8"/>
-                                    <line class="st3" x1="513" y1="245.9" x2="513" y2="497.8"/>
-                                </g>
-</svg>
-                        </div>
-                        <div>
-                            <h3>Traders&#039; prices</h3>
-                            <p style="font-size: 14px;">You can always find out the actual purchase prices for different types of agrarian crops in this section.</p>
-                        </div>
-                    </div>
-                    <div class="section" style="cursor: pointer" onclick="window.location.href='companies'">
-                        <div class="img" style="padding-top: 0px" >
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 762.3 762.3" style="enable-background:new 0 0 762.3 762.3;" xml:space="preserve">
-<style type="text/css">
-    .st0{fill:#2E6228;}
-    .st1{fill:none;stroke:#FFFFFF;stroke-width:18;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    .st2{fill:none;stroke:#FFFFFF;stroke-width:15.0741;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-    .st3{fill:none;stroke:#FFFFFF;stroke-width:12;stroke-linecap:round;stroke-miterlimit:10;}
-    .st4{fill:#869316;}
-</style>
-                                <g>
-                                    <circle class="st0" cx="381.1" cy="381.1" r="381.1"/>
-                                    <path class="st1" d="M462.2,368.2l33,12.6c22.8,8.7,39,29.3,42.1,53.5l27.6,211.4c86-58.1,142.6-156.6,142.6-268.2
-		C707.5,199,562.9,54.2,384.4,54H384C205.6,54.2,61,199,61,377.5c0,111.7,56.6,210.1,142.6,268.2l27.6-211.4
-		c3.2-24.2,19.3-44.7,42.1-53.5l33-12.6"/>
-                                    <path class="st1" d="M480.9,289.1c-1.3-0.3-2.6-0.5-3.9-0.4c0.2-3.2,0.2-17.2,0.2-20.1c0-52-69.9-116.2-119.6-77.3
-		c-44.3-10.8-68.5,25.3-68.5,77.3c0,3.1,0.1,17.3,0.2,20.8c-2.7-0.8-5.4-0.9-8-0.2c-11.5,2.9-17.4,19.2-13.1,36.5
-		c4.3,17.3,17.1,29,28.7,26.1c1-0.3,2-0.6,2.9-1.1c12.5,40.4,37.7,77.3,83.4,77.3c42.8,0,68.5-36.3,81.9-76.3c0.1,0,0.2,0.1,0.3,0.1
-		c11.5,2.9,24.4-8.8,28.7-26.1S492.5,291.9,480.9,289.1z"/>
-                                    <path class="st3" d="M331.8,273.6l21.8-21.8c0,0,52,25.6,87.8,25.6"/>
-                                    <path class="st3" d="M286.6,244.8c-24.9-26.4-62.4-40.7-92.5-17.1C149.8,217,125.6,253,125.6,305c0,3.1,0.1,17.3,0.2,20.8
-		c-2.7-0.8-5.4-0.9-8-0.2c-11.5,2.9-17.4,19.2-13.1,36.5c4.3,17.3,17.1,29,28.7,26.1c1-0.3,2-0.6,2.9-1.1
-		c3.9,12.5,6.3,20.5,12.9,31.3"/>
-                                    <path class="st3" d="M149.2,418.4l-33,12.6c-22.8,8.7-39,20.8-42.1,45"/>
-                                    <path class="st3" d="M475.7,274.8c24.9-26.4,62.4-40.7,92.5-17.1c44.3-10.8,68.5,25.3,68.5,77.3c0,3.1-0.1,17.3-0.2,20.8
-		c2.7-0.8,5.4-0.9,8-0.2c11.5,2.9,17.4,19.2,13.1,36.5c-4.3,17.3-17.1,29-28.7,26.1c-1-0.3-2-0.6-2.9-1.1
-		c-3.9,12.5-6.3,20.5-12.9,31.3"/>
-                                    <path class="st3" d="M613.1,448.4l33,12.6c22.8,8.7,35,17.8,38.1,42"/>
-                                </g>
-</svg>
-                        </div>
-                        <div>
-                            <h3>Companies</h3>
-                            <p style="font-size: 14px;">Catalog of companies that are related to agrarian subjects. Producers, processors, carriers etc.</p>
-                        </div>
-                    </div>
-                </div>
+<div class="about-agrolot" style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;">
+                <h2>Welcome</h2>
+                <span style="" >
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <br><br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <br><br>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <br><br>
 
-                <div class="main-banners">
-                    <div class="main-banners-item"><img src="images/main-banner1.jpg" alt=""></div>
-                    <div class="main-banners-item"><img src="images/main-banner2.png" alt=""></div>
-                    <div class="main-banners-item"><img src="images/main-banner3.jpg" alt=""></div>
-                </div>
-
+                  </span>
             </div>
-        </div>
+
+<div class="about-agrolot" style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+   ">
+  <h2>Agrichainx launch ICO</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br><br>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br><br>
+
+
+
+</div>
+
+
+    <div class="container">
+      <a  id="myBtn" href="#top"  style="
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          z-index: 99;
+          font-size: 12px;
+          border: none;
+          outline: none;
+          background-color: ;
+          color: #3B5323;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 50%; padding-right:5px" ><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="modal fade" id="modalEmailVerified" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Registration confirmed</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="chekin" style="margin: 0 auto">
-                        <div class="chekin-content" style="margin: 0 auto; width: 100%">
-                            <p>Congratulations, you have successfully confirmed your email! You can enter your personal account using data that were provided during registration.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="passwordRecoveryModalDialog" role="dialog" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Password recovery</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="chekin" id="chekin-block">
-                        <div class="chekin-content" id="chekin-content-block">
-                            <div id="passwordRecoveryErrors" class="registration-errors alert-danger"></div>
-                            <form id="formPassword" method="post">
-                                <input type="text" name="userId" id="userId" style="display:none">
-                                <input type="text" name="hash" id="hash" style="display: none">
-                                <div class="password">
-                                    <input type="password" name="firstPassword" style="background: #f9fafc;;"  class="form-control nl " placeholder="New password">
-                                </div>
-                                <div class="password">
-                                    <input type="password" name="secondPassword" style="background: #f9fafc;;"  class="form-control nl " placeholder="Confirm new password">
-                                </div>
-                                <button type="submit" id="submitPasswordRecovery" class="btn btn-labeled btn-success">
-                                    Save
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script>
-        $('.section').on('mouseover', function () {
-            $(this).find('.img').addClass('hover');
-        })
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-        $('.section').on('mouseout', function () {
-            $(this).find('.img').removeClass('hover')
-        })
-        $(document).ready(function () {
-            var params = $.deparam.fragment();
-            if (params.emailVerified) {
-                $('#modalEmailVerified').modal();
-            }
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
 
-            if (window.location.hash.length > 0) {
-                if (params.userId && params.hash && params.userId.length > 0 && params.hash.length > 0) {
-                    $('#userId').val(params.userId);
-                    $('#hash').val(params.hash);
-                    $('#passwordRecoveryModalDialog').modal();
-                    $(document).find('#submitPasswordRecovery').on('click', function () {
-                        $.ajax({
-                            url: "/change_password_ajax",
-                            data:  $(document).find('#formPassword').serialize(),
-                            type: "POST",
-                            success: function (data) {
-                                if (data.success) {
-                                    if (data.response.length === 0) {
-                                        $('#chekin-content-block').html('<p>Your password was successfully changed.</p>');
-                                        $('#chekin-content-block').append("<button type='submit' id='passwordRecoverySuccess' class='btn btn-labeled btn-success'>Continue</button>");
-                                        $(document).on('click', '#passwordRecoverySuccess', function () {
-                                            window.location = "index.html";
-                                        });
-                                    } else {
-                                        $('#passwordRecoveryErrors').html('');
-                                        $.each(data.response, function (k, v) {
-                                            $('#passwordRecoveryErrors').append(v + '<br>');
-                                        });
-                                        $('#passwordRecoveryErrors').css({'padding' : '10px', 'border-radius' : '10px'});
-                                    }
-                                }
-                            }
-                        });
-                        return false;
-                    });
-                }
-            }
-        });
+    // When the user clicks on the button, scroll to the top of the document
+
     </script>
 
+<br>
+<footer style="height: auto; background-color:#fff;  background-color: rgb(255, 255, 255);
+    box-shadow: rgba(87, 87, 87, 0.2) 0px 0px 12px 1px;
+" >
 
+<div class="footer-tel">
+    <div class="tel-info">
+                        <p>&nbsp;</p>
 
-    <footer >
-    <div class="footer-info">
+                                <p style="margin-top: 6px;">© «Agrichainx» 2016-2019. All rights reserved.</p>
     </div>
-    <div class="footer-tel">
-        <div class="tel-info">
-                            <p>&nbsp;</p>
-
-                                    <p style="margin-top: 6px;font-size: 12px;">© «Agrichainx» 2016-2019. All rights reserved.</p>
-        </div>
-        <div class="social-networks">
-            <img src="images/facebook.png" alt="">
-            <img src="images/twitter.png" alt="">
-            <img src="images/telegram.png" alt="">
-            <a style="color: #fff; font-size: 15px; margin: 10px 15px 0; cursor: pointer; text-decoration: none;" href="terms.html">Terms and Conditions</a>
-        </div>
+    <div class="social-networks">
+        <img src="images/facebook.png" alt="">
+        <img src="images/twitter.png" alt="">
+        <img src="images/telegram.png" alt="">
+        <a style="color: #fff; margin: 10px 15px 0; cursor: pointer; text-decoration: none;" href="terms.html">Terms and Conditions</a>
     </div>
+</div>
 </footer>
 
-        <script>
-            if (document.location.hostname.search("agrolot.ua") !== -1) {
-                (function (i, s, o, g, r, a, m) {
-                    i['GoogleAnalyticsObject'] = r;
-                    i[r] = i[r] || function () {
-                            (i[r].q = i[r].q || []).push(arguments)
-                        }, i[r].l = 1 * new Date();
-                    a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                    a.async = 1;
-                    a.src = g;
-                    m.parentNode.insertBefore(a, m)
-                })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+<br>
+</main>
 
-                ga('create', 'UA-101190623-1', 'auto');
-                ga('send', 'pageview');
-            }
 
-        </script>
 
-            </body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
 
 </html>

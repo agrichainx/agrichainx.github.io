@@ -43,11 +43,13 @@
 
 html {
   font-family: sans-serif;
+  line-height: 1.15;
 
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 
 @-ms-viewport {
   width: device-width;
@@ -4065,9 +4067,11 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .navbar-expand-sm {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4099,6 +4103,9 @@ input[type="button"].btn-block {
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
+
+
+
 }
 
 @media (max-width: 767.98px) {
